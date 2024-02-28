@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Maui.ImageCropper", "Plugin.Maui.ImageCropper\Plugin.Maui.ImageCropper.csproj", "{46077D4D-9000-4D1B-9BEF-544BC01B7E53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{235F027F-3F84-4606-95EA-DC334B8B496E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{8C5D87D3-063F-4620-8035-B8236E74300C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCropper.Maui.Binding.Android", "ImageCropper.Maui.Binding.Android\ImageCropper.Maui.Binding.Android.csproj", "{3CAC6C45-48FD-4C70-8711-970EC2565963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCropper.Maui.Binding.iOS", "ImageCropper.Maui.Binding.iOS\ImageCropper.Maui.Binding.iOS.csproj", "{5D19DAE1-57C4-4C72-92A7-8A054C45EAA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCropper.Demo", "ImageCropper.Demo\ImageCropper.Demo.csproj", "{C0934BA6-6D63-4132-BD88-518AE3E79295}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46077D4D-9000-4D1B-9BEF-544BC01B7E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46077D4D-9000-4D1B-9BEF-544BC01B7E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46077D4D-9000-4D1B-9BEF-544BC01B7E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46077D4D-9000-4D1B-9BEF-544BC01B7E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CAC6C45-48FD-4C70-8711-970EC2565963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAC6C45-48FD-4C70-8711-970EC2565963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAC6C45-48FD-4C70-8711-970EC2565963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAC6C45-48FD-4C70-8711-970EC2565963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D19DAE1-57C4-4C72-92A7-8A054C45EAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D19DAE1-57C4-4C72-92A7-8A054C45EAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D19DAE1-57C4-4C72-92A7-8A054C45EAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D19DAE1-57C4-4C72-92A7-8A054C45EAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0934BA6-6D63-4132-BD88-518AE3E79295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0934BA6-6D63-4132-BD88-518AE3E79295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0934BA6-6D63-4132-BD88-518AE3E79295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0934BA6-6D63-4132-BD88-518AE3E79295}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9ED156E-EAB9-49A6-91D7-1C6754A44432}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CAC6C45-48FD-4C70-8711-970EC2565963} = {235F027F-3F84-4606-95EA-DC334B8B496E}
+		{5D19DAE1-57C4-4C72-92A7-8A054C45EAA4} = {8C5D87D3-063F-4620-8035-B8236E74300C}
+	EndGlobalSection
+EndGlobal

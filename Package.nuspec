@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>ImageCropper</id>
+    <title>ImageCropper</title>
+    <version>1.0.0</version>
+    <authors>Bloomerang</authors>
+    <owners>Bloomerang</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<license type="expression">MIT</license>-->
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper</projectUrl>
+    <repository type="git" url="https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper" />
+    <description>.NET MAUI plugin to crop and rotate photos.</description>
+    <releaseNotes>.NET MAUI plugin to crop and rotate photos.</releaseNotes>
+    <copyright>Copyright 2024</copyright>
+    <tags>Image Cropper Net Maui</tags>
+
+    <dependencies>
+
+      <group targetFramework="net8.0-android33.0">
+
+          <!--<dependency id="SampleDependency" version="1.0.0" />-->
+      </group>
+
+      <group targetFramework="net8.0-ios17.2">
+
+        <!--<dependency id="SampleDependency" version="1.0.0" />-->
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+    <!-- #readme -->
+    <file src="README.md" target="" />
+
+    <!-- #android -->
+    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.dll" target="lib/net8.0-android33.0/" />
+    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.xml" target="lib/net8.0-android33.0/" />
+    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.aar" target="lib/net8.0-android33.0/" />
+
+
+    <!-- #iOS -->
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.dll" target="lib/net8.0-ios17.2/" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/manifest" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources" />
+
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Info.plist" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework" />
+
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/TOCropViewController" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework" />
+
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Modules/module.modulemap" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Modules" />
+
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropToolbar.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropView.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropViewController.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/UIImage+CropRotate.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+
+  </files>
+</package>

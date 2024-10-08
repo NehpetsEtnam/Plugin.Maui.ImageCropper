@@ -26,6 +26,7 @@ jobs:
       - name: Install MAUI workloads
         run: dotnet workload install maui
 
+      # image cropper
       - name: Restore NuGet packages
         run: dotnet restore Plugin.Maui.ImageCropper/Plugin.Maui.ImageCropper.csproj
 
@@ -36,3 +37,28 @@ jobs:
       - name: Publish NuGet package
         run: |
           dotnet nuget push ./nupkgs/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+
+      # android binding
+      - name: Restore NuGet packages
+        run: dotnet restore ImageCropper.Maui.Binding.Android/ImageCropper.Maui.Binding.Android.csproj
+
+      - name: Pack NuGet package
+        run: |
+          dotnet pack ImageCropper.Maui.Binding.Android/ImageCropper.Maui.Binding.Android.csproj --configuration Release --output ./nupkgs/android
+  
+      - name: Publish NuGet package
+        run: |
+          dotnet nuget push ./nupkgs/android/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+
+      # iOS binding
+      - name: Restore NuGet packages
+        run: dotnet restore ImageCropper.Maui.Binding.iOS/ImageCropper.Maui.Binding.iOS.csproj
+
+      - name: Pack NuGet package
+        run: |
+          dotnet pack ImageCropper.Maui.Binding.iOS/ImageCropper.Maui.Binding.iOS.csproj --configuration Release --output ./nupkgs/ios
+  
+      - name: Publish NuGet package
+        run: |
+          dotnet nuget push ./nupkgs/ios/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+

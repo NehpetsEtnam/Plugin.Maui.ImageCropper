@@ -4,6 +4,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
+    <PackageId>Net.Maui.ImageCropper.Binding.iOS</PackageId>
+		<Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

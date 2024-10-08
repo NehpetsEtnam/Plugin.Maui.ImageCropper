@@ -36,7 +36,7 @@ jobs:
   
       - name: Publish NuGet package
         run: |
-          dotnet nuget push ./nupkgs/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+          dotnet nuget push ./nupkgs/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
 
       # android binding
       - name: Restore NuGet packages
@@ -48,7 +48,7 @@ jobs:
   
       - name: Publish NuGet package
         run: |
-          dotnet nuget push ./nupkgs/android/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+          dotnet nuget push ./nupkgs/android/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
 
       # iOS binding
       - name: Restore NuGet packages
@@ -60,5 +60,5 @@ jobs:
   
       - name: Publish NuGet package
         run: |
-          dotnet nuget push ./nupkgs/ios/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+          dotnet nuget push ./nupkgs/ios/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
 

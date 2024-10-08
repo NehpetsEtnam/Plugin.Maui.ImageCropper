@@ -1,7 +1,7 @@
 # Introduction 
 .NET MAUI plugin to crop and rotate photos.
 
-Ported over and updated from : https://github.com/stormlion227/ImageCropper.Forms
+Ported over from : https://github.com/stormlion227/ImageCropper.Forms
 
 Supports Android and iOS.
 * Android library from : https://github.com/CanHub/Android-Image-Cropper

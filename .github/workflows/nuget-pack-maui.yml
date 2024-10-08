@@ -1,0 +1,38 @@
+name: NuGet Pack for .NET MAUI Library
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pack:
+    runs-on: macos-14
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+          sudo xcodebuild -runFirstLaunch
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '8.0.400' # Specify your MAUI-compatible SDK version
+
+      - name: Install MAUI workloads
+        run: dotnet workload install maui
+
+      - name: Restore NuGet packages
+        run: dotnet restore ./Plugin.Maui.ImageCropper.csproj
+
+      - name: Pack NuGet package
+        run: |
+          dotnet pack ./Plugin.Maui.ImageCropper.csproj --configuration Release --output ./nupkgs
+  
+      - name: Publish NuGet package
+        run: |
+          dotnet nuget push ./nupkgs/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}

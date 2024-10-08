@@ -46,6 +46,9 @@ In AppDelegate.cs file:
      new ImageCropper.Maui.Platform.Init();
 ```
 ## Usage
+
+Before calling the code below, you should request the required permissions for accessing camera and gallery first.
+
 ```cs
     new ImageCropper()
     {

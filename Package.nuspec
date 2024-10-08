@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>ImageCropper</id>
-    <title>ImageCropper</title>
-    <version>1.0.0</version>
-    <authors>Bloomerang</authors>
-    <owners>Bloomerang</owners>
+    <id>ImageCropper.Maui</id>
+    <title>ImageCropper.Maui</title>
+    <version>1.0.0.0</version>
+    <authors>XamMauiDev</authors>
+    <owners>XamMauiDev</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<license type="expression">MIT</license>-->
+    <!--<license type="expression">MIT</license> -->
     <!-- <icon>icon.png</icon> -->
-    <projectUrl>https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper</projectUrl>
-    <repository type="git" url="https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper" />
+    <!-- <projectUrl>https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper</projectUrl> -->
+    <!-- <repository type="git" url="https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper" /> -->
     <description>.NET MAUI plugin to crop and rotate photos.</description>
     <releaseNotes>.NET MAUI plugin to crop and rotate photos.</releaseNotes>
     <copyright>Copyright 2024</copyright>

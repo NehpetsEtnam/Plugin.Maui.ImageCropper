@@ -12,10 +12,13 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-	<ItemGroup Condition="$(TargetFramework.Contains('ios17'))">
+	<PropertyGroup Condition="$(TargetFramework.Contains('ios17'))">
 	  <CreatePackage>false</CreatePackage>
-	  <ProjectReference Include="..\ImageCropper.Maui.Binding.iOS\ImageCropper.Maui.Binding.iOS.csproj" />
 	</PropertyGroup>
+
+	<ItemGroup Condition="$(TargetFramework.Contains('ios17'))">
+	  <ProjectReference Include="..\ImageCropper.Maui.Binding.iOS\ImageCropper.Maui.Binding.iOS.csproj" />
+	</ItemGroup>
 	
 	<ItemGroup Condition="$(TargetFramework.Contains('android'))">
 	  <ProjectReference Include="..\ImageCropper.Maui.Binding.Android\ImageCropper.Maui.Binding.Android.csproj" />

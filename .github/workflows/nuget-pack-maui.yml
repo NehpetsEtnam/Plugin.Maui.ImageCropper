@@ -27,11 +27,11 @@ jobs:
         run: dotnet workload install maui
 
       - name: Restore NuGet packages
-        run: dotnet restore ./Plugin.Maui.ImageCropper.csproj
+        run: dotnet restore Plugin.Maui.ImageCropper.csproj
 
       - name: Pack NuGet package
         run: |
-          dotnet pack ./Plugin.Maui.ImageCropper.csproj --configuration Release --output ./nupkgs
+          dotnet pack Plugin.Maui.ImageCropper.csproj --configuration Release --output ./nupkgs
   
       - name: Publish NuGet package
         run: |

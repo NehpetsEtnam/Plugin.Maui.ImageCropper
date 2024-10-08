@@ -18,12 +18,12 @@
 
     <dependencies>
 
-      <group targetFramework="net8.0-android33.0">
+      <group targetFramework="net8.0-android34.0">
 
           <!--<dependency id="SampleDependency" version="1.0.0" />-->
       </group>
 
-      <group targetFramework="net8.0-ios17.2">
+      <group targetFramework="net8.0-ios17.0">
 
         <!--<dependency id="SampleDependency" version="1.0.0" />-->
       </group>
@@ -35,25 +35,25 @@
     <file src="README.md" target="" />
 
     <!-- #android -->
-    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.dll" target="lib/net8.0-android33.0/" />
-    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.xml" target="lib/net8.0-android33.0/" />
-    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.aar" target="lib/net8.0-android33.0/" />
+    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.dll" target="lib/net8.0-android34.0/" />
+    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.xml" target="lib/net8.0-android34.0/" />
+    <file src="ImageCropper.Maui.Binding.Android/bin/Release/net8.0-android/ImageCropper.Maui.Binding.Android.aar" target="lib/net8.0-android34.0/" />
 
 
     <!-- #iOS -->
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.dll" target="lib/net8.0-ios17.2/" />
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/manifest" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.dll" target="lib/net8.0-ios17.0/" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/manifest" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources" />
 
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Info.plist" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Info.plist" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework" />
 
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/TOCropViewController" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/TOCropViewController" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework" />
 
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Modules/module.modulemap" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Modules" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Modules/module.modulemap" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Modules" />
 
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropToolbar.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropView.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropViewController.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
-    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/UIImage+CropRotate.h" target="lib/net8.0-ios17.2/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropToolbar.h" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropView.h" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/TOCropViewController.h" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
+    <file src="ImageCropper.Maui.Binding.iOS/bin/Release/net8.0-ios/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers/UIImage+CropRotate.h" target="lib/net8.0-ios17.0/ImageCropper.Maui.Binding.iOS.resources/TOCropViewController.framework/Headers" />
 
   </files>
 </package>

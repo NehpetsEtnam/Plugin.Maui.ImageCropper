@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-android</TargetFramework>
+    <TargetFramework>net8.0-android34.0</TargetFramework>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -14,7 +14,7 @@
     <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="1.7.20.1" />
     <PackageReference Include="Xamarin.KotlinX.Coroutines.Android" Version="1.6.4.1" />
     <PackageReference Include="Xamarin.KotlinX.Coroutines.Core.Jvm" Version="1.6.4.1" />
-    <PackageReference Include="Kotlin.Parcelize.Runtime.Maui" Version="1.7.20" />
+    <PackageReference Include="XDev.Kotlin.Parcelize.Runtime" Version="1.8.22.1" />
   </ItemGroup>
   <ItemGroup>
     <AndroidLibrary Include="Jars\android-image-cropper-4.5.0.aar" />

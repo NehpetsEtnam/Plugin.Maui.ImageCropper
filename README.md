@@ -35,7 +35,12 @@ Add the following to your AndroidManifest.xml inside the <application> tags:
 
 In MainActivity.cs file:
 ```cs
-    new ImageCropper.Maui.Platform.Init(this);
+	protected override void OnCreate(Bundle savedInstanceState)
+	{
+	    new ImageCropper.Maui.Platform.Init(this);
+	
+	    base.OnCreate(savedInstanceState);
+	}
 ```
 
 ### iOS
@@ -43,7 +48,12 @@ In MainActivity.cs file:
 In AppDelegate.cs file:
 
 ```cs
-     new ImageCropper.Maui.Platform.Init();
+	public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
+        {
+            new ImageCropper.Maui.Platform.Init();
+
+            return base.FinishedLaunching(application, launchOptions);
+        }
 ```
 ## Usage
 

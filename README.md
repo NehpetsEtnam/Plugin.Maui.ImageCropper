@@ -3,6 +3,8 @@
 
 Ported over from : https://github.com/stormlion227/ImageCropper.Forms
 
+[![NuGet](https://img.shields.io/nuget/v/Net.Maui.ImageCropper.svg?maxAge=2592000)](https://www.nuget.org/packages/Net.Maui.ImageCropper) ![NuGet](https://img.shields.io/nuget/dt/Net.Maui.ImageCropper)
+
 Supports Android and iOS.
 * Android library from : https://github.com/CanHub/Android-Image-Cropper
 * iOS library from : https://github.com/TimOliver/TOCropViewController

@@ -31,7 +31,7 @@ jobs:
 
       - name: Pack NuGet package
         run: |
-          dotnet pack Package.nuspec --configuration Release --output ./nupkgs
+          dotnet pack Plugin.Maui.ImageCropper/Plugin.Maui.ImageCropper.csproj --configuration Release --output ./nupkgs
   
       - name: Publish NuGet package
         run: |

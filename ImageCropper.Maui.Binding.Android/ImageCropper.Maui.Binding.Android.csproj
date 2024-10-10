@@ -9,7 +9,7 @@
         <Version>1.0.1</Version>
         <Icon>icon.png</Icon> 
         <ProjectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</ProjectUrl> 
-        <RepositoryUrl type="git" url="https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper" /> 
+        <RepositoryUrl>"https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper"</RepositoryUrl>
         <Description>.Binding library for android image cropper version 4.5.0. https://github.com/CanHub/Android-Image-Cropper</Description>
         <ReleaseNotes>.Binding library for android image cropper version 4.5.0.</ReleaseNotes>
         <Copyright>Copyright 2024</Copyright>

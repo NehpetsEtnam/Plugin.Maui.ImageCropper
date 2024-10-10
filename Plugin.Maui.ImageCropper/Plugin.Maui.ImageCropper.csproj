@@ -6,7 +6,7 @@
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<PackageId>Net.Maui.ImageCropper</PackageId>
-		<Version>1.0.4</Version>
+		<Version>1.0.5</Version>
 		<Icon>icon.png</Icon> 
 		<ProjectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</ProjectUrl> 
 		<RepositoryUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</RepositoryUrl>
@@ -14,15 +14,17 @@
 		<ReleaseNotes>.NET MAUI plugin to crop and rotate photos.</ReleaseNotes>
 		<Copyright>Copyright 2024</Copyright>
 		<Tags>Net Maui Image Cropper</Tags>
-
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
-
+	
 	<PropertyGroup Condition="$(TargetFramework.Contains('ios'))">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
-
+	
 	<ItemGroup Condition="$(TargetFramework.Contains('ios'))">
 	  <ProjectReference Include="..\ImageCropper.Maui.Binding.iOS\ImageCropper.Maui.Binding.iOS.csproj" />
 	</ItemGroup>

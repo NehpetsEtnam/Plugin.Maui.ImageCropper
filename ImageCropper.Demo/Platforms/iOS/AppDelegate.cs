@@ -10,9 +10,6 @@ public class AppDelegate : MauiUIApplicationDelegate
 
     public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
     {
-        new Plugin.Maui.ImageCropper.Platform().Init();
-
         return base.FinishedLaunching(application, launchOptions);
     }
 }
-

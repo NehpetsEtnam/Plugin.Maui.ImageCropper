@@ -9,7 +9,7 @@ public class MainActivity : MauiAppCompatActivity
 {
     protected override void OnCreate(Bundle savedInstanceState)
     {
-        new Plugin.Maui.ImageCropper.Platform().Init(this);
+        Plugin.Maui.ImageCropper.Platform.SetupActivityResultLauncher(this);
 
         base.OnCreate(savedInstanceState);
     }

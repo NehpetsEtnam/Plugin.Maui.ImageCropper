@@ -1,31 +1,29 @@
 ﻿using AndroidX.Activity.Result;
 using Com.Canhub.Cropper;
-using Plugin.Maui.ImageCropper.Platforms.Android;
 using Fragment = AndroidX.Fragment.App.Fragment;
 using Object = Java.Lang.Object;
 
 namespace Plugin.Maui.ImageCropper;
 
-public class Platform : Fragment, IActivityResultCallback
+public class Platform
 {
-    public MauiAppCompatActivity AppActivity { get; set; }
-
-    public void Init(MauiAppCompatActivity activity)
+    public static void SetupActivityResultLauncher(MauiAppCompatActivity activity)
     {
-        DependencyService.Register<IImageCropperWrapper, PlatformImageCropper>();
-        AppActivity = activity; ;
-        ImageCropperActivityResultLauncher = activity.RegisterForActivityResult(new CropImageContract(), this);
+        ImageCropperActivityResultLauncher = activity.RegisterForActivityResult(new CropImageContract(), new ActivityResultCallback());
     }
 
     public static ActivityResultLauncher ImageCropperActivityResultLauncher { get; set; }
+}
 
+public class ActivityResultCallback : Fragment, IActivityResultCallback
+{
     public void OnActivityResult(Object cropImageResult)
     {
         if (cropImageResult is CropImage.ActivityResult result)
         {
             if (result.IsSuccessful)
             {
-                ImageCropper.Current.Success?.Invoke(result.GetUriFilePath(AppActivity, true));
+                ImageCropper.Current.Success?.Invoke(result.GetUriFilePath(Microsoft.Maui.ApplicationModel.Platform.AppContext, true));
             }
             else
             {
@@ -38,4 +36,3 @@ public class Platform : Fragment, IActivityResultCallback
         }
     }
 }
-

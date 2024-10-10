@@ -9,9 +9,9 @@
         <Version>1.0.1</Version>
         <Icon>icon.png</Icon> 
         <ProjectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</ProjectUrl> 
-        <RepositoryUrl>"https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper"</RepositoryUrl>
-        <Description>.Binding library for iOS image cropper. https://github.com/TimOliver/TOCropViewController</Description>
-        <ReleaseNotes>.Binding library for iOS image cropper.</ReleaseNotes>
+        <RepositoryUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</RepositoryUrl>
+        <Description>Binding library for iOS image cropper. https://github.com/TimOliver/TOCropViewController</Description>
+        <ReleaseNotes>Binding library for iOS image cropper.</ReleaseNotes>
         <Copyright>Copyright 2024</Copyright>
         <Tags>iOS Image Cropper Binding</Tags>
     </PropertyGroup>

@@ -1,41 +1,42 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net8.0-ios17.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>true</ImplicitUsings>
-    <IsBindingProject>true</IsBindingProject>
-    <PackageId>Net.Maui.ImageCropper.Binding.iOS</PackageId>
-    <Version>1.0.1</Version>
-    <icon>icon.png</icon> 
-	<projectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</projectUrl> 
-	<repository type="git" url="https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper" /> 
-	<description>.Binding library for iOS image cropper. https://github.com/TimOliver/TOCropViewController</description>
-	<releaseNotes>.Binding library for iOS image cropper.</releaseNotes>
-	<copyright>Copyright 2024</copyright>
-	<tags>iOS Image Cropper Binding</tags>
-  </PropertyGroup>
 
-  <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0-ios17.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>true</ImplicitUsings>
+        <IsBindingProject>true</IsBindingProject>
+        <PackageId>Net.Maui.ImageCropper.Binding.iOS</PackageId>
+        <Version>1.0.1</Version>
+        <Icon>icon.png</Icon> 
+        <ProjectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</ProjectUrl> 
+        <Repository type="git" url="https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper" /> 
+        <Description>.Binding library for iOS image cropper. https://github.com/TimOliver/TOCropViewController</Description>
+        <ReleaseNotes>.Binding library for iOS image cropper.</ReleaseNotes>
+        <Copyright>Copyright 2024</Copyright>
+        <Tags>iOS Image Cropper Binding</Tags>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Native References\TOCropViewController.framework" />
-    <None Remove="Native References\TOCropViewController.framework\TOCropViewController" />
-    <None Remove="Native References\TOCropViewController.framework\Info.plist" />
-    <None Remove="Native References\TOCropViewController.framework\Headers\TOCropView.h" />
-    <None Remove="Native References\TOCropViewController.framework\Headers\TOCropToolbar.h" />
-    <None Remove="Native References\TOCropViewController.framework\Headers\UIImage+CropRotate.h" />
-    <None Remove="Native References\TOCropViewController.framework\Headers\TOCropViewController.h" />
-    <None Remove="Native References\TOCropViewController.framework\Modules\module.modulemap" />
-  </ItemGroup>
+    <ItemGroup>
+        <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+        <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="Native References\TOCropViewController.framework" />
+        <None Remove="Native References\TOCropViewController.framework\TOCropViewController" />
+        <None Remove="Native References\TOCropViewController.framework\Info.plist" />
+        <None Remove="Native References\TOCropViewController.framework\Headers\TOCropView.h" />
+        <None Remove="Native References\TOCropViewController.framework\Headers\TOCropToolbar.h" />
+        <None Remove="Native References\TOCropViewController.framework\Headers\UIImage+CropRotate.h" />
+        <None Remove="Native References\TOCropViewController.framework\Headers\TOCropViewController.h" />
+        <None Remove="Native References\TOCropViewController.framework\Modules\module.modulemap" />
+    </ItemGroup>
   
-  <ItemGroup>
-    <NativeReference Include="Native References\TOCropViewController.framework">
-      <Kind>Framework</Kind>
-      <SmartLink>False</SmartLink>
-    </NativeReference>
-  </ItemGroup>
+    <ItemGroup>
+        <NativeReference Include="Native References\TOCropViewController.framework">
+            <Kind>Framework</Kind>
+            <SmartLink>False</SmartLink>
+        </NativeReference>
+    </ItemGroup>
 
 </Project>

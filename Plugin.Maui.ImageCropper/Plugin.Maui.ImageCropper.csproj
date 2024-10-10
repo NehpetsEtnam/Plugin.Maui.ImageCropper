@@ -9,7 +9,7 @@
 		<Version>1.0.4</Version>
 		<Icon>icon.png</Icon> 
 		<ProjectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</ProjectUrl> 
-		<Repository type="git" url="https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper" /> 
+		<RepositoryUrl type="git" url="https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper" /> 
 		<Description>.NET MAUI plugin to crop and rotate photos.</Description>
 		<ReleaseNotes>.NET MAUI plugin to crop and rotate photos.</ReleaseNotes>
 		<Copyright>Copyright 2024</Copyright>

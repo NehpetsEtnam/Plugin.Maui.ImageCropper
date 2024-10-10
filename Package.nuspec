@@ -8,13 +8,13 @@
     <owners>XamMauiDev</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<license type="expression">MIT</license> -->
-    <!-- <icon>icon.png</icon> -->
-    <!-- <projectUrl>https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper</projectUrl> -->
-    <!-- <repository type="git" url="https://dev.azure.com/Bloomerang/Bloomerang%20Mobile/_git/Plugin.Maui.ImageCropper" /> -->
-    <description>.NET MAUI plugin to crop and rotate photos.</description>
-    <releaseNotes>.NET MAUI plugin to crop and rotate photos.</releaseNotes>
-    <copyright>Copyright 2024</copyright>
-    <tags>Image Cropper Net Maui</tags>
+    <icon>icon.png</icon> 
+	<projectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</projectUrl> 
+	<repository type="git" url="https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper" /> 
+	<description>.NET MAUI plugin to crop and rotate photos.</description>
+	<releaseNotes>.NET MAUI plugin to crop and rotate photos.</releaseNotes>
+	<copyright>Copyright 2024</copyright>
+	<tags>Net Maui Image Cropper</tags>
 
     <dependencies>
 

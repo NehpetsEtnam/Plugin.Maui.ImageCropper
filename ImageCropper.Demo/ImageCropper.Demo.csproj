@@ -12,7 +12,7 @@
 		<ApplicationTitle>Image Cropper</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.bloomerang.imagecropper.demo</ApplicationId>
+		<ApplicationId>com.imagecropper.demo</ApplicationId>
 		<ApplicationIdGuid>d6b20f4e-dea7-4ac9-ab3c-f98a4f494870</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -24,11 +24,13 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
+		<CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
+		<CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />

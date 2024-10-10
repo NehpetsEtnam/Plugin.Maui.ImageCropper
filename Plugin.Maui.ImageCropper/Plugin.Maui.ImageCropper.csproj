@@ -6,7 +6,14 @@
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<PackageId>Net.Maui.ImageCropper</PackageId>
-		<Version>1.0.3</Version>
+		<Version>1.0.4</Version>
+		<icon>icon.png</icon> 
+		<projectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</projectUrl> 
+		<repository type="git" url="https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper" /> 
+		<description>.NET MAUI plugin to crop and rotate photos.</description>
+		<releaseNotes>.NET MAUI plugin to crop and rotate photos.</releaseNotes>
+		<copyright>Copyright 2024</copyright>
+		<tags>Net Maui Image Cropper</tags>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>

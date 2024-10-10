@@ -27,6 +27,21 @@ Supports Android and iOS.
 
 ## Setup
 
+### MauiProgram
+
+Add UseImageCropper() to your MauiProgram.cs file
+```cs
+	var builder = MauiApp.CreateBuilder();
+		builder
+			.UseMauiApp<App>()
+			.ConfigureFonts(fonts =>
+			{
+				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			})
+			.UseImageCropper();
+```
+
 ### Android
 
 Add the following to your AndroidManifest.xml inside the <application> tags:
@@ -39,7 +54,7 @@ In MainActivity.cs file:
 ```cs
 	protected override void OnCreate(Bundle savedInstanceState)
 	{
-	    new ImageCropper.Maui.Platform.Init(this);
+	    Plugin.Maui.ImageCropper.Platform.SetupActivityResultLauncher(this);
 	
 	    base.OnCreate(savedInstanceState);
 	}
@@ -50,12 +65,7 @@ In MainActivity.cs file:
 In AppDelegate.cs file:
 
 ```cs
-	public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
-        {
-            new ImageCropper.Maui.Platform.Init();
-
-            return base.FinishedLaunching(application, launchOptions);
-        }
+	No additional set up for iOS
 ```
 ## Usage
 
@@ -87,7 +97,3 @@ TODO: Describe and show how to build your code and run the tests.
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)

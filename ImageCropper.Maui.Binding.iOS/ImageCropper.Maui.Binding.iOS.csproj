@@ -6,7 +6,7 @@
         <ImplicitUsings>true</ImplicitUsings>
         <IsBindingProject>true</IsBindingProject>
         <PackageId>Net.Maui.ImageCropper.Binding.iOS</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Icon>icon.png</Icon> 
         <ProjectUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</ProjectUrl> 
         <RepositoryUrl>https://github.com/NehpetsEtnam/Plugin.Maui.ImageCropper</RepositoryUrl>

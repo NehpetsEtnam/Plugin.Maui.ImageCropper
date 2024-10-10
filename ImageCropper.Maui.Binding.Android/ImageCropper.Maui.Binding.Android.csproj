@@ -15,7 +15,7 @@
         <Copyright>Copyright 2024</Copyright>
         <Tags>Android Image Cropper Binding</Tags>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
     </PropertyGroup>
 
     <ItemGroup>
